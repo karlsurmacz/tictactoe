@@ -1,11 +1,11 @@
 function valueArray = initializeValueArray(feasibleStates, bIsNoughts)
 
 if bIsNoughts
+    nWin = 2;   % Goal is for computer to win
+    nLose = 1;
+else
     nWin = 1;
     nLose = 2;
-else
-    nWin = 2;
-    nLose = 1;
 end
 
 bWinningState = findWinningStates(feasibleStates, nWin);
